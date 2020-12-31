@@ -1,4 +1,4 @@
-module.exports = (app: any) => {
+export default app => {
   return async (ctx, next) => {
     ctx.socket.emit('res', 'connected!');
     await next();
